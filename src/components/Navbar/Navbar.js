@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { NavbarMenu } from '../mockdata/data'
+import { NavbarMenu } from '../../mockdata/data'
 import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { FaDumbbell } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
-import ResponsiveMenu from './ResponsiveMenu';
+import ResponsiveMenu from '../ResponsiveMenu';
 
 export const Navbar = () => {
   const[open,setopen]=useState(false)
