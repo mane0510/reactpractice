@@ -1,7 +1,10 @@
 
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
-import UseEffectBasic from './components/UseEffectHook/UseEffectBasic';
+import DataFetcher from './components/UseEffectHook/DataFetcher';
+import LoggerComponent from './components/UseEffectHook/LoggerComponent';
+import TimerComponent from './components/UseEffectHook/TimerComponent';
+
 
 
 function App() {
@@ -9,7 +12,9 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
-   <UseEffectBasic/>
+   <LoggerComponent/>
+   <TimerComponent/>
+   <DataFetcher/>
 
     </div>
   );
