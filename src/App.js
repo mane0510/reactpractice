@@ -1,13 +1,15 @@
 
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
-import { UseReducerHook } from './components/UseReducerHook/UseReducerHook';
+import UseEffectBasic from './components/UseEffectHook/UseEffectBasic';
+
 
 function App() {
+  
   return (
     <div className="App">
    <Navbar/>
-  <UseReducerHook/> 
+   <UseEffectBasic/>
 
     </div>
   );
