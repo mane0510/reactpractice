@@ -1,5 +1,6 @@
 
 import './App.css';
+import ApiForm from './components/ApiForm/ApiForm';
 import { Navbar } from './components/Navbar/Navbar';
 import DataFetcher from './components/UseEffectHook/DataFetcher';
 import LoggerComponent from './components/UseEffectHook/LoggerComponent';
@@ -14,12 +15,12 @@ function App() {
   return (
     <div className="App">
    <Navbar/>
-   <LoggerComponent/>
+   {/* <LoggerComponent/> */}
    {/* <TimerComponent/>
    <DataFetcher/> */}
-   <ResizeComponent/>
-   <MultiEffectComponent/>
-
+   {/* <ResizeComponent/>
+   <MultiEffectComponent/> */}
+ <ApiForm/>
     </div>
   );
 }
