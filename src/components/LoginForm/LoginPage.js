@@ -42,16 +42,28 @@ const[islogin,setIsLogin]=useState(true)
             </div>
             <div className='mt-3 flex flex-1 gap-4 justify-center  '>
               <div className='border rounded hover:border-green-400  '>
+                <a href='https://mail.www.google.com'>
                 <FcGoogle className='text-3xl'/>
+                </a>
+                
               </div>
               <div className='border rounded hover:border-green-400 '>
+                <a href='https://x.com/?mx=2'>
                 <FaXTwitter className='text-3xl'/>
+                </a>
               </div>
               <div className='border rounded hover:border-green-400 '>
+                <a href='https://www.facebook.com/'>
                 <BiLogoFacebookSquare className='text-3xl'/>
+                </a>
+                
               </div>
               <div className='border rounded hover:border-green-400 '>
-                <FaLinkedin className='text-3xl'/>
+                <a href='https://www.linkedin.com'>
+                <FaLinkedin 
+                className='text-3xl'/>
+                </a>
+                
               </div>
             </div>
             <div className='mt-6 flex gap-5'>
