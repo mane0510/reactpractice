@@ -18,7 +18,7 @@ import ResponsiveMenu from '../ResponsiveMenu';
        <p>Coders</p>
        <p className='text-orange-500'>Gym</p>
       </div>
-      {/* Menu section */}
+     
       <div className='hidden md:block'>
         <ul className='flex items-center gap-6 text-gray-600'>
          {NavbarMenu.map((item)=>{
@@ -30,7 +30,7 @@ import ResponsiveMenu from '../ResponsiveMenu';
          })}
         </ul>
       </div>
-      {/* Icons section */}
+    
       <div className=' flex items-center gap-4'>
         <button className='text-2xl hover:bg-orange-500 hover:text-white rounded-full p-2 duration-200'>
           <CiSearch />
@@ -38,22 +38,19 @@ import ResponsiveMenu from '../ResponsiveMenu';
         <button className='text-2xl hover:bg-orange-500 hover:text-white rounded-full p-2 duration-200'>
           <PiShoppingCartThin />
         </button> 
-        <div className=' '>
+        <div >
         <button className='hover:bg-orange-500 transform text-primary  font-semibold hover:text-white rounded-md border-2 border-primary
          px-6 py-2 duration-100 hidden md:block '>Login</button>
         </div>
-       
       </div> 
      </div>
-     {/* Mobile Humburger Menu section */}
      <div className='md:hidden' onCanPlay={()=>{
       setopen(!open)
      }}>
       <MdMenu className='text-4xl'/>
      </div>
-     {/* Mobile Sidebar section */}
      <ResponsiveMenu open={open}/>
-    
+
    </nav>
     </>
    
