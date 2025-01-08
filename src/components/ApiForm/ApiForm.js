@@ -50,7 +50,7 @@ const ApiForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmitForm())}>
+    <form onSubmit={handleSubmit(onSubmitForm)}>
       <div className="px-6 py-1 flex justify-center font-semibold text-xl my-5">
         <h1>API Form</h1>
       </div>
