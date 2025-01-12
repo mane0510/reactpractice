@@ -16,7 +16,7 @@ const ReactHookMaterialUi = () => {
             Mode="onChange",
             defaultValues=defaultValues,
          ])
-         const onSubmitForm=(data)=>{
+         const  onSubmitForm=(data)=>{
         console.log("The data with Material ui is:",data)
          }
 

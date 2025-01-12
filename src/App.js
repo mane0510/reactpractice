@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar/>*/}
-      {/* <LoginPage/> */}
-      <ReactHookMaterialUi/>
+      <LoginPage/>
+      {/* <ReactHookMaterialUi/> */}
     
       
 
