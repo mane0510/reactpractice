@@ -1,24 +1,16 @@
-
-import './App.css';
-import ApiForm from'./components/ApiForm/ApiForm';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginForm/LoginPage';
-import TodoList from './components/ToDolist/TodoList'
-import Navbar from './components/Navbar/Navbar'
 import Register from './components/LoginForm/Register';
-import ReactHookMaterialUi from './components/MaterialUi/ReactHookMaterialUi';
-
-
 
 function App() {
   return (
-    <div className="App">
-      {/* <Navbar/>*/}
-      <LoginPage/>
-      {/* <ReactHookMaterialUi/> */}
-    
-      
-
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/Register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
