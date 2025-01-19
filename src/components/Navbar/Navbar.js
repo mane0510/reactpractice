@@ -5,9 +5,14 @@ import { PiShoppingCartThin } from "react-icons/pi";
 import { FaDumbbell } from "react-icons/fa";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from '../ResponsiveMenu';
+import { useNavigate } from 'react-router-dom';
 
  const Navbar = () => {
   const[open,setopen]=useState(false)
+  const navigate =useNavigate();
+  const handeSignIn=()=>{
+    navigate('/LoginPage')
+  }
   return (
     <>
     <nav>
@@ -39,8 +44,10 @@ import ResponsiveMenu from '../ResponsiveMenu';
           <PiShoppingCartThin />
         </button> 
         <div >
-        <button className='hover:bg-orange-500 transform text-primary  font-semibold hover:text-white rounded-md border-2 border-primary
-         px-6 py-2 duration-100 hidden md:block '>Login</button>
+        <button 
+        className='hover:bg-orange-500 transform text-primary  font-semibold hover:text-white rounded-md border-2 border-primary
+         px-6 py-2 duration-100 hidden md:block ' 
+         onClick={handeSignIn}>Login</button>
         </div>
       </div> 
      </div>

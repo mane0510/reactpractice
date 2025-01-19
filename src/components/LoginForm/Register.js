@@ -10,7 +10,7 @@ const Register = () => {
   const navigate = useNavigate(); 
 
   const handleSignInClick = () => {
-    navigate('/');
+    navigate('/LoginPage');
   };
 
   return (
@@ -18,7 +18,7 @@ const Register = () => {
       <div className="bg-stone-800 grid min-h-screen py-4 hover:brightness-[100%] flex text-center">
         <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[450px] rounded-xl">
           <div className="mt-4">
-            <h1 className="text-2xl font-semibold text-black border-b-2 border-slate-900">
+            <h1 className="text-2xl font-semibold text-orange-500 border-b-2 border-slate-900">
               Register
             </h1>
           </div>
@@ -53,7 +53,7 @@ const Register = () => {
           <div className="mt-8">
             <button
               type="submit"
-              className="text-xl font-semibold bg-blue-800 text-white hover:bg-gray-800 w-[300px] py-1.5 rounded-full shadow-md"
+              className="text-xl font-semibold bg-orange-500 text-white hover:bg-gray-800 w-[300px] py-1.5 rounded-full shadow-md"
             >
               Register
             </button>

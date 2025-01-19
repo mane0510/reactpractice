@@ -11,15 +11,15 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleSignUpNavigation = () => {
-    navigate('/Register'); // Navigate to the Register page
+    navigate('/Register'); 
   };
 
   return (
     <form>
       <div className="bg-stone-800 grid min-h-screen py-4 hover:brightness-[100%] flex text-center">
-        <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[450px] rounded-xl">
+        <div className="bg-white place-self-center w-11/12 max-w-md flex flex-col p-7 min-h-[450px] rounded-xl shadow-orange-700">
           <div className="mt-4">
-            <h1 className="text-2xl font-semibold text-black border-b-2 border-slate-900 cursor-pointer">
+            <h1 className="text-2xl font-semibold text-orange-600 border-b-2 border-slate-900 cursor-pointer">
               Login
             </h1>
           </div>
@@ -61,7 +61,7 @@ const LoginPage = () => {
           <div className="mt-6">
             <button
               type="submit"
-              className="text-xl font-semibold bg-blue-800 text-white hover:bg-gray-800 w-[300px] py-1.5 rounded-full shadow-md cursor-pointer"
+              className="text-xl font-semibold bg-orange-500 text-white hover:bg-gray-800 w-[300px] py-1.5 rounded-full shadow-md cursor-pointer"
             >
               Login
             </button>
