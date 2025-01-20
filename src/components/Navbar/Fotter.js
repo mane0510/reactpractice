@@ -6,4 +6,4 @@ const Fotter = () => {
   )
 }
 
-export default Fotter
+export default Fotter 
